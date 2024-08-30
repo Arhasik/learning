@@ -8,6 +8,7 @@ fun main() {
     println(sumEvenUntilNegative(list1))
     val list2 = listOf<Int>(1,2,-3,4,5,6,7,3,5,10)
     println(sumEvenUntilNegative(list2))
+    println()
 
 }
 
