@@ -6,7 +6,7 @@ fun main() {
 
     println(countStringOccurrences(list))
     println(countStringOccurrencesFunction(list))
-
+    println(repeat(3, "sdbfks"))
 }
 fun countStringOccurrences(list: List<String>): Map<String, Int> {
     val result = mutableMapOf<String, Int>()
@@ -18,10 +18,14 @@ fun countStringOccurrences(list: List<String>): Map<String, Int> {
             result[string] = 1
         }
     }
-
     return result
 }
 
 fun countStringOccurrencesFunction(list: List<String>): Map<String, Int> {
     return list.groupingBy { it }.eachCount()
+}
+
+fun repeat (n: Int, s: String): String {
+    val repeat = s.repeat(n)
+    return repeat
 }
