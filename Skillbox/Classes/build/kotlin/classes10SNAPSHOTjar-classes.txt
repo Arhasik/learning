@@ -1,0 +1,1 @@
+C:\Users\noute\Desktop\lerning\Skillbox\Classes\build\classes\kotlin\main\Channel.class;C:\Users\noute\Desktop\lerning\Skillbox\Classes\build\classes\kotlin\main\MainKt.class;C:\Users\noute\Desktop\lerning\Skillbox\Classes\build\classes\kotlin\main\TV$Companion.class;C:\Users\noute\Desktop\lerning\Skillbox\Classes\build\classes\kotlin\main\TV.class
