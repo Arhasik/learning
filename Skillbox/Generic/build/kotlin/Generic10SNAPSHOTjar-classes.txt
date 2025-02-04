@@ -1,0 +1,1 @@
+C:\Users\noute\Desktop\lerning\Skillbox\Generic\build\classes\kotlin\main\Ammo.class;C:\Users\noute\Desktop\lerning\Skillbox\Generic\build\classes\kotlin\main\MainKt.class;C:\Users\noute\Desktop\lerning\Skillbox\Generic\build\classes\kotlin\main\Stack.class
