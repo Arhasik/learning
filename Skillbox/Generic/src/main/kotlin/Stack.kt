@@ -1,11 +1,11 @@
 class Stack<T> {
-    var listStack = mutableListOf<T>()
+    private val listStack = mutableListOf<T>()
 
-    fun push(item: T) {   //добавляет элемент
+    fun push(item: T) {
         listStack.add(item)
     }
 
-    fun pop(): T? {   // извлекает элемент
+    fun pop(): T? {
         if (listStack.isEmpty()) {
             return null
         }
@@ -13,10 +13,14 @@ class Stack<T> {
     }
 
     fun isEmpty(): Boolean {
-        return  listStack.isEmpty()
+        return listStack.isEmpty()
     }
 
     fun size(): Int {
         return listStack.size
+    }
+
+    fun clear() {
+        listStack.clear()
     }
 }
