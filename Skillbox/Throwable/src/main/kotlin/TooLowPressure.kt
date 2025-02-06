@@ -1,0 +1,3 @@
+class TooLowPressure: Exception() {
+
+}
