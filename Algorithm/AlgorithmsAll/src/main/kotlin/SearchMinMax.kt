@@ -115,5 +115,5 @@ fun task4(): Int {
 }
 
 
-fun
+
 
