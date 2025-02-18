@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="testText">Text for Evgeniy education</string>
+    <string-array  name="textCentre">
+    <item>Все свободно</item>
+    <item>Осталось мест</item>
+    <item>Пассажиров слишком много</item>
+    </string-array>
+    <string name="button_text">Сброс</string>
+</resources>
