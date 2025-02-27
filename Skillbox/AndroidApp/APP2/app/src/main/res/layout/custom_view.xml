@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Аватар (черный квадрат) -->
+    <FrameLayout
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/black"/>
+
+    <!-- Контейнер для текста -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/upperText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Верхняя строчка"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/lowerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нижняя строчка"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:lines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <!-- Серый контент (FrameLayout) -->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/avatar"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>
