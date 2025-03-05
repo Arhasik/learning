@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyCustomTextProgressBar" parent="MyCustomTextHeading">
+        <item name="android:textColor">#444444</item>
+    </style>
+</resources>

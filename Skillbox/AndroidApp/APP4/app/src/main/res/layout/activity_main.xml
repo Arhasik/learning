@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/avatarPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/view_beautiful_persian_domestic_cat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        android:layout_marginHorizontal="16dp"
+        app:errorEnabled="true"
+        app:counterMaxLength="40"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="Имя"
+        app:layout_constraintTop_toBottomOf="@+id/avatarPhoto"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textName"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/violet"
+        android:hint="Телефон"
+        app:layout_constraintTop_toBottomOf="@+id/inputName"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPhone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/headingRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyCustomTextHeading"
+        android:text="Пол"
+        app:layout_constraintTop_toBottomOf="@id/inputPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingRadioGroup"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonWomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ж"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="М"
+            />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:buttonTint="@color/violet"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:gravity="end"
+        />
+
+    <TextView
+        android:id="@+id/switchLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получать уведомления"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:paddingStart="16dp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkBoxFirst"
+        android:layout_width="wrap_content"
+        android:enabled="false"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+
+        style="@style/CustomCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/switchLabel"
+        android:text="Об авторизации на устройстве"
+        />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkBoxSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxFirst"
+        style="@style/CustomCheckBox"
+        android:text="О новинках и предложениях"
+        />
+
+    <TextView
+        android:id="@+id/textLinearIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Баллы"
+        style="@style/MyCustomTextHeading"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSecond"
+        />
+
+    <TextView
+        android:id="@+id/countBall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem/random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSecond"
+        android:lines="1"
+        style="@style/MyCustomTextHeading"
+        />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLinearIndicator"
+        android:textAlignment="textStart"
+        android:contextClickable="true"
+        app:trackThickness="4dp"
+        android:progress="0"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearIndicator"
+        android:layout_marginTop="16dp"
+        android:text="Сохранить"
+        android:enabled="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
