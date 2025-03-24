@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">APP5</string>
+    <string name="start_activity">start_activity</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="patronymic">Отчетсво</string>
+    <string name="save">Сохранить</string>
+    <string name="text_box">У меня есть отчество</string>
+    <string name="introduce_yourself">Представиться</string>
+</resources>
