@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APP9</string>
+    <string-array name="planets">
+        <item>Меркурий</item>
+        <item>Венера</item>
+        <item>Земля</item>
+        <item>Марс</item>
+        <item>Юпитер</item>
+        <item>Сатурн</item>
+        <item>Уран</item>
+        <item>Нептун</item>
+        <item>Плутон</item>
+    </string-array>
+
+
+
+<!--    <integer-array name="winter_olympic_years">-->
+<!--        <item>2022</item>-->
+<!--        <item>2018</item>-->
+<!--        <item>2014</item>-->
+<!--        <item>2010</item>-->
+<!--        <item>2006</item>-->
+<!--        <item>2002</item>-->
+<!--        <item>1998</item>-->
+<!--        <item>1994</item>-->
+<!--        <item>1992</item>-->
+<!--        <item>1988</item>-->
+<!--        <item>1984</item>-->
+<!--        <item>1980</item>-->
+<!--    </integer-array>-->
+
+
+    <plurals name="count_new_messages">
+        <item quantity="zero">%1$d новых сообщений</item>
+        <item quantity="one">%1$d новое сообщений</item>
+        <item quantity="two">%1$d новых сообщений</item>
+        <item quantity="few">%1$d новых сообщений</item>
+        <item quantity="many">%1$d новых сообщений</item>
+        <item quantity="other">%1$d новых сообщений</item>
+    </plurals>
+</resources>

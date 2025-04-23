@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">APP9</string>
+
+    <string name="choose_the_date_dialog_title">Тайтл диалога даты</string>
+    <string name="choose_the_time_dialog_title">Тайтл диалога времени</string>
+
+
+    <string-array name="planets">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Pluto</item>
+    </string-array>
+
+    <plurals name="count_new_messages">
+        <item quantity="zero">%1$d new messages</item>
+        <item quantity="one">%1$d new message</item>
+        <item quantity="two">%1$d new messages</item>
+        <item quantity="few">%1$d new messages</item>
+        <item quantity="many">%1$d new messages</item>
+        <item quantity="other">%1$d new messages</item>
+    </plurals>
+</resources>
